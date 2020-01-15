@@ -3,10 +3,18 @@ LINE -> init |							# add parameters like filename, library etc
 		; |								# for undo
 		redo |
 		write |							# write to file
-		MOVSTMT
+		read string |					# read from file
+		set_time string |				# sets time and generates .mot file
+		MOVSTMT |
+		ADDSTMT |
+		SETSPEED|
+		quit
 
 
 MOTORLIST -> number | number MOTORLIST
 
 MOVSTMT -> name ANGLELIST
+ANGLELIST -> float | float ANGLELIST
+
+ADDSTMT -> name ANGLELIST
 ANGLELIST -> float | float ANGLELIST
