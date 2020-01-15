@@ -1,0 +1,12 @@
+LINE -> init |							# add parameters like filename, library etc
+		var name MOTORLIST |
+		; |								# for undo
+		redo |
+		write |							# write to file
+		MOVSTMT
+
+
+MOTORLIST -> number | number MOTORLIST
+
+MOVSTMT -> name ANGLELIST
+ANGLELIST -> float | float ANGLELIST
