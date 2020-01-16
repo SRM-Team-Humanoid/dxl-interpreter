@@ -1,4 +1,5 @@
-LINE -> init |							# add parameters like filename, library etc
+LINE -> env |							# prints environment
+		init |							# add parameters like filename, library etc
 		var name MOTORLIST |
 		; |								# for undo
 		redo |
