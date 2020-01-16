@@ -1,15 +1,15 @@
-LINE -> env |							# prints environment
-		init |							# add parameters like filename, library etc
-		var name MOTORLIST |
-		; |								# for undo
-		redo |
-		write |							# write to file
-		read string |					# read from file
-		set_time string |				# sets time and generates .mot file
-		MOVSTMT |
-		ADDSTMT |
-		SETSPEED|
-		quit
+LINE -> env |                           # prints environment
+        init |                          # add parameters like filename, library etc
+        var name MOTORLIST |
+        ; |                             # for undo
+        redo |
+        write |                         # write to file
+        read string |                   # read from file
+        set_time string |               # sets time and generates .mot file
+        MOVSTMT |
+        ADDSTMT |
+        SETSPEED|
+        quit
 
 
 MOTORLIST -> number | number MOTORLIST
